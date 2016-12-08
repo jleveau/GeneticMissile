@@ -58,13 +58,13 @@ function Rocket (pos_x, pos_y, width, height, nb_frame, dna = null ){
 
     this.evaluate = function(target){
         var target_distance = dist(this.pos.x, this.pos.y, target.pos.x, target.pos.y);
-        this.fitness =  1/target_distance;
+        this.fitness =  pow(1/target_distance,3);
 
         if (this.finished){
-            this.fitness *=  10;
+            this.fitness *=  this.fitness;
         }
         if (this.crashed)
-            this.fitness /=  10;
+            this.fitness /=  30;
     }
 
 }

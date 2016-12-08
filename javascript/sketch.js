@@ -5,7 +5,7 @@ var ROCKET_HEIGHT = 30;
 var NB_ROCKET = 200;
 var TARGET_RADIUS = 50;
 var POPULATION_LIFESPAN = 600;
-var MUTATION_RATE = 0.005;
+var MUTATION_RATE = 0.002;
 
 var population;
 var target;
